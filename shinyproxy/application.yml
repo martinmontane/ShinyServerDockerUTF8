@@ -12,13 +12,12 @@ proxy:
   docker:
       internal-networking: true
   specs:
-  - id: mapavicentelopez
-    display-name: Mapa Interactivo de OSC
-    description: Mapa interactivo de las OSC de Vicente Lopez. En desarrollo
-    container-cmd: ["R", "-e", "shiny::runApp('/root/mapavicentelopez')"]
-    container-network: shinyproxy-net
-    container-image: mapavicentelopez
-
+  - id: testapp
+    display-name: shinyapptest
+    description: Primera shiny app en este servidor local
+    container-cmd: ["R", "-e", "shiny::runApp('/root/firstapp')"]
+    container-network: redshinyproxy
+    container-image: testappimage
 logging:
   file:
     shinyproxy.log
