@@ -76,7 +76,7 @@ Si quisieran agregar otra, solamente deberían hacer lo siguiente
     container-network: redshinyproxy
     container-image: nombreimagenapp2
 ```
-Para comprender el resto de las configuraciones de shinyproxy, les recomiendo consultar su (página de configuración)[https://www.shinyproxy.io/configuration/]
+Para comprender el resto de las configuraciones de shinyproxy, les recomiendo consultar su [página de configuración](https://www.shinyproxy.io/configuration/)
 Sin embargo, aunque tengan todo en funcionamiento, deben crear imagenes de docker que contengan a sus aplicaciones shiny. Este es el último paso.
 
 ## Agregando apps
