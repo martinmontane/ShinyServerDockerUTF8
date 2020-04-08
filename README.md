@@ -12,10 +12,6 @@ La gente de Open Analytics desarrolló una alternativa de código abierto muy in
 
 Este repositorio explica y brinda el armado básico para poner en funcionamiento a [nginx](https://nginx.org/en/) con shinyproxy 2.3.0 con encoding UTF-8 y conexión encriptada para que nuestro sitio sea seguro.
 
-## Un disclaimer
-
-Soy un economista y especialista en ciencia de datos trabajando con múltiples capas de Docker, R, manejo de puertos y la generación de certificados automáticos. Acepto cualquier contribución a este rudimentario código que mejore cualquiera de sus funciones. Esto incluye algún proyecto spinoff que utilice a Nginx directamente como un loadbalancer, autoscaling y certificación automática, como una alternativa a shinyproxy que, entre otra cosas, permitiría dejar contenedores corriendo para evitar el - a veces molesto - tiempo de carga de las shinyapps.
-
 ## Manos en el Docker
 
 El docker-compose.yml que ven en la carpeta root de este proyecto pone en funcionamiento tres containers: nginx, nginx-gen, letsencrypt y un shinyproxy. Veamos en resumidas cuentas qué hace cada uno:
